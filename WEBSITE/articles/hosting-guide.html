@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Lengkap Hosting Website: Gratis hingga Berbayar, Semua Bisa!</title>
+    <meta name="description" content="Panduan Lengkap Hosting Website: Gratis hingga Berbayar, Semua Bisa!">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Loading Bar -->
+    <div class="loading-bar"></div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-water"></i></span>
+                <a href="../index.html" class="logo-text">HugoTarigan</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="../index.html#blog">Artikel</a></li>
+                    <li><a href="../index.html#tutorial">Tutorial Hosting</a></li>
+                    <li><a href="../index.html#about">Profil</a></li>
+                    <li><a href="../index.html#contact">Kontak</a></li>
+                    <li>
+                        <div class="current-time" id="currentTime"></div>
+                    </li>
+                    <li>
+                        <div class="language-selector">
+                            <button class="language-btn" id="languageBtn">
+                                <i class="fas fa-globe"></i> EN
+                            </button>
+                            <div class="language-dropdown" id="languageDropdown">
+                                <a href="#" data-lang="en">English</a>
+                                <a href="#" data-lang="id">Indonesia</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="article-header">
+            <img src="../images/ho1.jpg" class="article-header-image">
+            <div class="article-header-content">
+                <h1 data-en="Dari Lokal ke Online: Tutorial Hosting dalam Dunia Web"
+                    data-id="Dari Lokal ke Online: Tutorial Hosting dalam Dunia Web">Dari Lokal ke Online: Tutorial
+                    Hosting dalam Dunia Web</h1>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> <span id="article-date"></span></span>
+                    <span><i class="far fa-comment"></i></span>
+                    <span><i class="far fa-clock"></i></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ARTIKEL -->
+
+        <div class="article-content container">
+            <img src="../images/ho2.jpg">
+            <p data-en="" data-id="">Agar sebuah situs dapat diakses secara daring, diperlukan proses hosting website.
+                Hosting merupakan langkah penting untuk menempatkan file dan struktur situs ke dalam server agar dapat
+                diakses melalui jaringan internet.<br><br>
+
+                Pembahasan berikut akan menguraikan tahapan-tahapan dalam mengunggah website menggunakan beberapa alat
+                bantu (tools) yang umum digunakan. Setiap langkah disusun secara sistematis untuk memudahkan proses
+                implementasi.</p>
+            <p data-en="" data-id="">&nbsp;&nbsp;&nbsp;&nbsp; 1. Pilih web hosting yang andal dan tepercaya<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 2. Tentukan cara upload website<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 3. Upload dan ekstrak file arsip website<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 4. Pastikan semua file tersimpan di public_html<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 5. Impor database MySQL<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 6. Cek apakah website berhasil online</p>
+            <p data-en="" data-id="">Namun, sebelum melanjutkan ke tahapan mengunggah website, terdapat beberapa hal
+                yang perlu dipersiapkan terlebih dahulu:</p>
+            <p data-en="" data-id="">&nbsp;&nbsp;&nbsp;&nbsp; 1. Login ke control panel akun hosting Anda.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 2. File website (biasanya dalam format arsip .zip atau .tar.gz) dan database
+                (jika &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;digunakan).<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 3. Aplikasi FTP, seperti FileZilla, dan informasi login FTP (opsional).</p>
+
+            <h2 data-en="" data-id="">Langkah 1: Pilih web hosting yang andal dan tepercaya</h2>
+            <img src="../images/ho3.jpg">
+            <p data-en="" data-id="">Membangun website dengan performa optimal tidak dapat dilakukan secara sembarangan.
+                Salah satu faktor yang paling berpengaruh adalah kualitas layanan web hosting yang digunakan. Hosting
+                yang baik akan menyediakan fitur-fitur unggulan yang mendukung proses pembuatan dan publikasi situs
+                secara efisien.<br><br>
+
+                Terdapat beberapa aspek penting yang perlu diperhatikan dalam memilih layanan hosting berkualitas, baik
+                untuk durasi bulanan maupun paket tahunan dengan harga terjangkau:</p>
+            <h3 data-en="" data-id="">1. Dukungan Pelanggan yang Responsif</h3>
+            <p data-en="" data-id="">Layanan live support sangat penting, terutama ketika menghadapi kendala teknis.
+                Ketika penyedia hosting tidak menyediakan fitur bantuan seperti live chat atau dukungan via telepon,
+                proses penanganan masalah dapat menjadi lambat dan membingungkan. Kehadiran tim dukungan yang siap
+                membantu selama 24 jam akan sangat mendukung kelancaran operasional website.</p>
+            <h3 data-en="" data-id="">2. Kontrol Penuh terhadap Akun Hosting</h3>
+            <p data-en="" data-id="">Kemampuan untuk mengelola akun hosting secara mandiri merupakan faktor krusial.
+                Pembatasan akses dan fitur dapat menyulitkan pengelolaan situs, terutama setelah website berhasil
+                dipublikasikan. Contoh yang sering dibandingkan adalah perbedaan antara WordPress.com (terbatas) dan
+                WordPress.org (self-hosted), yang memberikan kontrol penuh terhadap file dan konfigurasi situs.</p>
+            <h3 data-en="" data-id="">3. Skalabilitas Ruang dan Sumber Daya</h3>
+            <p data-en="" data-id="">Website yang berkembang memerlukan sumber daya yang lebih besar. Oleh karena itu,
+                penting untuk memastikan bahwa penyedia hosting menawarkan opsi peningkatan layanan, seperti VPS atau
+                cloud hosting. Ketersediaan ruang dan daya tambahan akan sangat membantu ketika traffic website
+                meningkat secara signifikan.</p>
+            <h3 data-en="" data-id="">4. Jaminan Uang Kembali</h3>
+            <p data-en="" data-id="">Untuk menghindari risiko kerugian, pilih penyedia hosting yang memiliki kebijakan
+                jaminan uang kembali. Fitur ini memungkinkan pengguna untuk mencoba layanan dalam jangka waktu tertentu
+                dan memberikan rasa aman sebelum memutuskan untuk berlangganan secara penuh.
+
+            </p>
+            <h3 data-en="" data-id="">5. Penawaran Tambahan yang Bernilai Lebih</h3>
+            <p data-en="" data-id="">Paket hosting yang disertai dengan berbagai fitur tambahan akan memberikan
+                keuntungan lebih. Beberapa penyedia menawarkan domain gratis, promo harga, serta sertifikat SSL gratis
+                seumur hidup. Memilih layanan dengan nilai tambah yang lengkap akan sangat bermanfaat dalam jangka
+                panjang.
+            </p>
+
+            <h2 data-en="" data-id="">Langkah 2: Pilih cara upload website</h2>
+            <img src="../images/ho4.jpg">
+            <p data-en="" data-id="">Langkah berikutnya adalah menentukan alat (tool) yang tepat untuk mengunggah dan
+                mengaktifkan website agar dapat diakses secara daring. Pemilihan tool yang sesuai akan mempermudah
+                proses publikasi situs, terutama dalam hal pengelolaan file dan koneksi ke server.</p>
+            <h3 data-en="" data-id="">1. File Manager</h3>
+            <p data-en="" data-id="">Tool berbasis browser ini memiliki semua fitur unggulan untuk mengelola file dan
+                direktori Anda. Jika memilih Hostinger, Anda akan mendapatkan akses ke tool ini!<br><br>
+
+                Hanya saja, tool ini memiliki satu kekurangan, yaitu batasan upload. Jika ukuran backup website lebih
+                besar dari 256MB, sebaiknya gunakan FTP.</p>
+            <h3 data-en="" data-id="">2. File Transfer Protocol (FTP)</h3>
+            <p data-en="" data-id="">Sebagian besar penyedia layanan web hosting mendukung FTP (File Transfer Protocol),
+                yaitu protokol yang digunakan untuk mentransfer file antara komputer lokal dan server hosting. Untuk
+                menggunakan metode ini, diperlukan perangkat lunak klien FTP yang harus terlebih dahulu diinstal pada
+                komputer.<br><br>
+
+                Bagi pengguna layanan Hostinger, seluruh informasi kredensial yang dibutuhkan untuk mengakses klien FTP
+                tersedia pada menu Akun FTP, yang dapat ditemukan di bagian File pada panel kontrol hosting.<br><br></p>
+
+            <h2 data-en="" data-id="">Hosting dengan InfinityFree</h2>
+            <p data-en="" data-id="">Pada bagian ini akan digunakan layanan hosting berbasis gratis, yaitu InfinityFree.
+                Layanan ini tersedia tanpa biaya karena dirancang sebagai sarana pembelajaran bagi siapa pun yang ingin
+                mempelajari proses hosting website.<br><br>
+
+                InfinityFree memberikan kesempatan untuk memahami konsep dan praktik hosting tanpa harus mengeluarkan
+                biaya, sehingga cocok digunakan untuk kebutuhan uji coba maupun pengembangan awal.<br>
+
+                Berikut ini adalah langkah-langkah untuk melakukan proses hosting website menggunakan InfinityFree.</p>
+
+            <h3 data-en="" data-id="">1. Masuk ke Website InfinityFree</h3>
+            <p data-en="" data-id="">Tahap pertama yang perlu dilakukan adalah mengakses situs resmi InfinityFree
+                melalui tautan berikut: <a href="https://app.infinityfree.net/">https://app.infinityfree.net/</a>.
+                <img src="../images/ho7.jpg">
+                Setelah halaman utama terbuka, langkah selanjutnya adalah memilih opsi “Sign Up Now” untuk memulai
+                proses pendaftaran akun hosting gratis.
+            </p>
+            <h3 data-en="" data-id="">2. Sign In dan Sign Up</h3>
+            <p data-en="" data-id="">Bagi pengguna yang telah memiliki akun, silakan langsung masuk dengan memilih opsi
+                Sign In. Namun, jika belum memiliki akun, pilih opsi Sign Up untuk melakukan pendaftaran.<br>
+                <img src="../images/ho8.jpg">
+
+                <br>Tampilan halaman akan menyesuaikan dengan pilihan tersebut. Proses pendaftaran di InfinityFree tidak
+                memerlukan biaya apa pun, karena layanan ini sepenuhnya gratis dan dapat digunakan tanpa batas waktu.
+            </p>
+            <h3 data-en="" data-id="">3. Create Account</h3>
+            <p data-en="" data-id="">Langkah selanjutnya adalah membuat akun hosting untuk website yang akan diunggah.
+                Setelah berhasil masuk ke dashboard, pilih opsi “Create Account” untuk memulai proses pembuatan akun
+                baru.<br>
+
+                Setelah opsi tersebut diklik, halaman akan menampilkan formulir atau antarmuka baru yang digunakan untuk
+                mengatur detail akun hosting, seperti domain yang akan digunakan.</p>
+            <img src="../images/ho9.jpg">
+            <h3 data-en="" data-id="">&nbsp;&nbsp;&nbsp;&nbsp;&#9670; Langkah Pertama</h3>
+            <p data-en="" data-id="">Setelah masuk ke halaman pembuatan akun, akan ditampilkan kolom untuk memasukkan
+                nama domain yang diinginkan.<br>
+
+                Sebagai contoh, digunakan domain exwebsite.freecluster.eu, di mana "exwebsite" adalah nama subdomain
+                yang dapat disesuaikan, sedangkan ".freecluster.eu" merupakan domain yang disediakan oleh
+                InfinityFree.<br>
+
+                Pastikan nama domain yang dimasukkan unik dan belum digunakan oleh pengguna lain.</p>
+            <img src="../images/ho10.jpg">
+            <h3 data-en="" data-id="">&nbsp;&nbsp;&nbsp;&nbsp;&#9670; Langkah Kedua</h3>
+            <p data-en="" data-id="">Pada tahap berikutnya, akan diminta untuk mengisi kolom Account Label. Kolom ini
+                bersifat opsional dan dapat diisi sesuai keinginan. Sebagai referensi, label akun dapat diisi dengan
+                nama domain yang telah dipilih sebelumnya untuk memudahkan identifikasi.<br>
+
+                Setelah seluruh data diisi dengan benar, klik tombol “Create Account” untuk melanjutkan proses pembuatan
+                akun hosting.</p>
+            <img src="../images/ho11.jpg">
+            <h3 data-en="" data-id="">&nbsp;&nbsp;&nbsp;&nbsp;&#9670; Langkah ketiga</h3>
+            <p data-en="" data-id="">Setelah akun berhasil dibuat, langkah selanjutnya adalah memilih opsi “View in
+                Client Area”. Opsi ini akan mengarahkan ke halaman pengelolaan akun hosting, di mana berbagai informasi
+                dan pengaturan teknis dapat diakses, seperti detail FTP, pengelolaan file, dan akses ke control panel.
+            </p>
+            <img src="../images/ho12.jpg">
+
+            <h3 data -en="" data-id="">4. Dashbord InfinityFree</h3>
+            <p data-en="" data-id="">Berikut ini merupakan tampilan dashboard dari layanan InfinityFree. Pada halaman
+                ini, pengguna dapat melihat informasi akun hosting yang telah dibuat, termasuk status akun, detail
+                domain, serta berbagai menu pengelolaan seperti File Manager, Control Panel, dan pengaturan DNS.<br><br>
+
+                Dashboard ini menjadi pusat kontrol utama untuk mengelola seluruh aspek teknis dari website yang
+                dihosting melalui InfinityFree.</p>
+            <img src="../images/ho13.jpg">
+            <h3 data-en="" data-id="">5. Control Panel Setting</h3>
+            <p data-en="" data-id="">Sebelum diarahkan ke halaman Control Panel, akan muncul halaman persetujuan. Pada
+                halaman ini, pastikan untuk membaca informasi yang ditampilkan, lalu klik tombol “I Approve” untuk
+                melanjutkan ke tahap berikutnya.<br><br>
+
+                Langkah ini merupakan bagian dari proses konfirmasi sebelum diberikan akses penuh ke kontrol pengelolaan
+                hosting.<br><br>
+                Setelah menyetujui pernyataan sebelumnya, sistem akan menampilkan halaman Control Panel. Pada halaman
+                ini, tersedia berbagai fitur dan alat pengelolaan untuk akun hosting, seperti pengaturan domain,
+                manajemen file, basis data (database), serta konfigurasi email dan keamanan.<br><br>
+
+                Control Panel ini merupakan pusat utama untuk melakukan seluruh aktivitas teknis terkait website yang
+                dihosting di InfinityFree.F
+
+            </p>
+            <img src="../images/ho14.jpg">
+
+
+            <h3 data-en="" data-id="">Choosing the Right Hosting Provider</h3>
+            <p data-en="" data-id="">Pada halaman Control Panel, tersedia berbagai menu yang dapat digunakan untuk
+                mengelola seluruh aspek teknis dari akun hosting. Menu-menu tersebut dikelompokkan berdasarkan fungsi
+                tertentu, antara lain:<br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Preference – Berisi pengaturan umum terkait akun hosting dan antarmuka
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                pengguna.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670;File – Digunakan untuk mengelola file website, termasuk akses ke File
+                Manager &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dan konfigurasi FTP.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Database – Menyediakan alat untuk membuat dan mengatur database, seperti
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                MySQL Databases dan phpMyAdmin.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Domain – Berfungsi untuk mengelola domain utama, subdomain, addon
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; domain, serta pengaturan DNS.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Email – Menyediakan fitur untuk membuat akun email, menerapkan
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;forwarders, dan mengelola akses email.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Metrics – Menampilkan data statistik terkait performa dan penggunaan
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sumber daya website.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Security – Berisi pengaturan keamanan seperti SSL, perlindungan hotlink,
+                dan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitur IP Blocker.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Software – Menyediakan fitur tambahan seperti penginstal otomatis
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Softaculous), serta pengaturan PHP.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670; Advanced – Menyediakan alat konfigurasi lanjutan seperti Cron Jobs,
+                Error &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pages, dan lain-lain.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&#9670;Support – Menyediakan akses ke bantuan teknis dan dokumentasi dari pihak
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;penyedia layanan.<br>
+
+                Menu-menu ini dirancang agar pengguna dapat mengelola hosting dengan lebih mudah dan fleksibel sesuai
+                kebutuhan.</p>
+
+
+
+            <div class="article-navigation">
+                <a href="ux-design.html"><i class="fas fa-arrow-left"></i> <span data-en="Previous Article"
+                        data-id="Artikel Sebelumnya">Previous Article</span></a>
+                <a href="../index.html#blog" data-en="Back to Articles" data-id="Kembali ke Artikel">Back to Articles <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer with wave animation -->
+    <footer>
+        <div class="wave-container">
+            <div class="wave"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 data-en="Hugo A. J Tarigan" data-id="Hugo A.J Tarigan">Hugo A. J Tarigan</h3>
+                    <p data-en="Building a website is about designing an experience — where aesthetics meet function, and ideas come to life."
+                        data-id="Membangun website adalah merancang pengalaman — di mana estetika bertemu fungsi, dan ide menjadi nyata.">
+                        Building a website is about designing an experience — where aesthetics meet function, and ideas
+                        come to life.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Quick Links" data-id="Tautan Cepat">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-id="Beranda">Beranda</a></li>
+                        <li><a href="#blog" data-en="Articles" data-id="artikel">Artikel</a></li>
+                        <li><a href="#tutorial" data-en="Hosting Tutorial" data-id="Tutorial Hosting">Hosting
+                                Tutorial</a></li>
+                        <li><a href="#about" data-en="About" data-id="Tentang">Profil</a></li>
+                        <li><a href="#contact" data-en="Contact" data-id="Kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Popular Articles" data-id="Artikel Populer">Popular Articles</h3>
+                    <ul>
+                        <li><a href="articles/web-development.html" data-en="Web Develover" data-id="Web Develover">Web
+                                Develover</a></li>
+                        <li><a href="articles/web-design.html" data-en="Web Design" data-id="Web Desiner">Web Design</a>
+                        </li>
+                        <li><a href="articles/ux-design.html" data-en="UX Design" data-id="UX Desiner">UX Design</a>
+                        </li>
+                        <li><a href="articles/hosting-guide.html" data-en="Hosting Guide"
+                                data-id="Panduan Hosting">Hosting
+                                Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HugoTarigan. <span data-en="All Rights Reserved." data-id="Seluruh Hak Cipta.">All Rights
+                        Reserved.</span>
+                    <!--| <span data-en="Designed with" data-id="Dirancang dengan">Designed with</span> -->
+                    <!-- <i class="fas fa-heart" style="color: var(--seafoam);"></i> <span data-en="near the ocean"
+                        data-id="di dekat laut">near the ocean</span> -->
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Set article date
+        document.getElementById('article-date').textContent = new Date(Date.now() - 86400000 * 7).toLocaleDateString();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo A.J Tarigan | Pemerograman Website I</title>
+    <meta name="description" content="This website provides comprehensive information on Computer Science, covering everything from the basics to the 
+        latest technological developments. Visitors can find articles, tutorials, and guides on programming, AI, cybersecurity,
+        web development, as well as study and career tips. It's ideal for students, educators, and IT professionals.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loading Bar -->
+    <div class="loading-bar"></div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-water"></i></span>
+                <a href="index.html" class="logo-text">HugoTarigan</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- NAVBAR -->
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#blog">Artikel</a></li> <!--ARTIKEL-->
+                    <li><a href="#tutorial">Tutorial Hosting</a></li>
+                    <li><a href="#about">Profil</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li>
+                        <div class="current-time" id="currentTime"></div>
+                    </li>
+                    <li>
+                        <div class="language-selector">
+                            <button class="language-btn" id="languageBtn">
+                                <i class="fas fa-globe"></i> EN
+                            </button>
+                            <div class="language-dropdown" id="languageDropdown">
+                                <a href="#" data-lang="en">English</a>
+                                <a href="#" data-lang="id">Indonesia</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 data-en="Web Programming I" data-id="Pemerograman Web I">Pemerograman Web I</h1>
+                <p data-en="Web Programming I is an introductory course that covers the basic concepts and techniques of building web pages. The topics include HTML 
+                (HyperText Markup Language), CSS (Cascading Style Sheets), and an introduction to JavaScript. The main goal of this course is to provide an understanding 
+                of web structure, design, and interactivity so that students can create attractive and functional static web pages."
+                    data-id="Pemerograman Web I adalah mata kuliah dasar yang membahas konsep dan teknik dasar dalam membangun halaman web. Materi yang dipelajari meliputi HTML 
+                    (HyperText Markup Language), CSS (Cascading Style Sheets), dan pengenalan JavaScript. Tujuan utama dari mata kuliah ini adalah memberikan pemahaman tentang 
+                    struktur, desain, dan interaktivitas web agar mahasiswa mampu membuat halaman web statis yang menarik dan fungsional.">
+                    Web Programming I is an introductory
+                    course that covers the basic concepts and techniques of building web pages. The topics include HTML
+                    (HyperText Markup Language), CSS (Cascading Style Sheets),
+                    and an introduction to JavaScript. The main goal of this course is to provide an understanding of
+                    web structure, design, and interactivity so that students can
+                    create attractive and functional static web pages.</p>
+                <a href="#blog" class="btn" data-en="Explore Articles" data-id="Jelajahi Artikel">Explore Articles</a>
+            </div>
+            <div class="wave-container">
+                <div class="wave"></div>
+            </div>
+        </section>
+
+        <!-- Breadcrumbs -->
+        <div class="container breadcrumbs">
+            <a href="index.html" data-en="Home" data-id="Beranda">Beranda</a>
+            <span>/</span>
+            <a href="#blog" data-en="Articles" data-id="Artikel">Artikel</a>
+        </div>
+
+        <!-- Blog Section -->
+        <main class="main container">
+            <section id="blog" class="page-section">
+                <div class="section-title">
+                    <h2 data-en="Web Programming I" data-id="Pemerograman Web I">Web Programming I
+                        Articles</h2>
+                    <p data-en="An Article on the Expected Learning Outcomes After Completing Web Programming I"
+                        data-id="Artikel tentang Capaian yang Diharapkan Setelah Mempelajari Pemrograman Web I">An
+                        Article on the expected Learning Outcomes After Completing Web Programming I</p>
+                </div>
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card fade-in hover-grow">
+                        <div class="card-image">
+                            <img src="images/web-development.jpg">
+                        </div>
+                        <div class="card-content">
+                            <div class="meta">
+                                <span><i class="far fa-calendar-alt"></i> <span id="post1-date"></span></span>
+                                <span><i class="far fa-comment"></i></span>
+                            </div>
+                            <h3 data-en="Web Developer: A Promising Career in the Digital Era – Responsibilities, Skills, and Salary!"
+                                data-id="Web Developer: Karier Menjanjikan di Era Digital – Tugas, Keahlian, dan Gajinya!">
+                                Web Developer: A Promising Career in the Digital Era – Responsibilities, Skills, and
+                                Salary!</h3>
+                            <p data-en="A Web Developer is a professional responsible for creating, developing, and maintaining websites. The website development carried out by a Web Developer may involve HTML, CSS, and programming languages such as JavaScript."
+                                data-id="Web Developer adalah seorang profesional yang bertanggung jawab untuk membuat, mengembangkan, dan memelihara situs web. Pengembangan website yang dilakukan oleh Web Developer bisa meliputi HTML, CSS, hingga bahasa pemrograman Javascript.">
+                                Web Developer is a professional responsible for creating, developing, and maintaining
+                                websites.</p>
+                            <a href="articles/web-development.html" class="read-more" data-en="Read More"
+                                data-id="Baca Selengkapnya">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-card fade-in hover-grow">
+                        <div class="card-image">
+                            <img src="images/web-design.jpg">
+                        </div>
+                        <div class="card-content">
+                            <div class="meta">
+                                <span><i class="far fa-calendar-alt"></i> <span id="post2-date"></span></span>
+                                <span><i class="far fa-comment"></i></span>
+                            </div>
+                            <h3 data-en="Web Design: More Than Just Appearance – Here's the Definition, Purpose, and Functions!"
+                                data-id="Web Design: Lebih dari Sekadar Tampilan – Ini Pengertian, Tujuan, dan Fungsinya!">
+                                Web Design: More Than Just Appearance – Here's the Definition, Purpose, and Functions!
+                            </h3>
+                            <p data-en="Web design refers to the visual design applied to digital media, specifically websites. It is a design intended for the development and styling of information on the internet to provide high-end user features and deliver aesthetic quality. This definition distinguishes web design from web programming, emphasizing the functional aspects of a website while positioning web design as a form of graphic design."
+                                data-id="Web design adalah istilah mengenai desaign visual yang diterapkan kepada media digital yaitu website, design yang ditunjukan untuk pengembangan dan styling informasi di internet untuk menyediakan fitur konsumen high-end dan memberikan kualitas estetika. Definisi yang ditawarkan memisahkan desain web dari pemrograman web, menekankan fitur fungsional dari sebuah situs web, serta desain posisi web sebagai semacam desain grafis.">
+                                Web design refers to the visual design applied to digital media, specifically websites.
+                            </p>
+                            <a href="articles/web-design.html" class="read-more" data-en="Read More"
+                                data-id="Baca Selengkapnya">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-card fade-in hover-grow">
+                        <div class="card-image">
+                            <img src="images/ux-design.jpg">
+                        </div>
+                        <div class="card-content">
+                            <div class="meta">
+                                <span><i class="far fa-calendar-alt"></i> <span id="post3-date"></span></span>
+                                <span><i class="far fa-comment"></i></span>
+                            </div>
+                            <h3 data-en="What Is UX Design? Here's How It Differs from UI Design – Two Terms Often Confused!"
+                                data-id="Apa Itu UX Design? Ini Bedanya dengan UI Design yang Sering Disamakan!">What Is
+                                UX Design? Here's How It Differs from UI Design – Two Terms Often Confused!</h3>
+                            <p data-en="UX design is the process of creating smooth and intuitive experiences when users interact with a website or application. From checking in at the airport to easily finding the checkout button on a marketplace, UX design is present in every aspect of our lives."
+                                data-id="UX design adalah proses untuk menciptakan pengalaman yang lancar dan intuitif pada saat user menggunakan website maupun aplikasi. Mulai dari check-in di bandara sampai kemudahan menemukan tombol checkout di marketplace, UX design ada di setiap aspek kehidupan kita.">
+                                UX design is the process of creating smooth and intuitive experiences when users
+                                interact with a website or application.</p>
+                            <a href="articles/ux-design.html" class="read-more" data-en="Read More"
+                                data-id="Baca Selengkapnya">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Tutorial Hosting Section -->
+            <section id="tutorial" class="hosting-tutorial fade-in">
+                <div class="container">
+                    <h2 data-en="Website Hosting Tutorial" data-id="Tutorial Hosting Website">Website Hosting Tutorial
+                    </h2>
+                    <p data-en="Before your website can be accessed by the public, you need to host it first. Hosting is the process of placing your website files on a server so they can be accessed online. Interestingly, there are now many hosting options available — from free services for beginners or trial purposes, to paid ones with complete features and high performance. In this tutorial, you’ll be guided step-by-step on how to host your website, using both free and paid services, so it can go live and be ready to use."
+                        data-id="Sebelum website bisa diakses publik, kamu perlu melakukan hosting terlebih dahulu. Hosting adalah proses menempatkan file website ke server agar bisa diakses secara online. Menariknya, saat ini ada banyak pilihan hosting, mulai dari yang gratis untuk pemula atau uji coba, hingga yang berbayar dengan fitur lengkap dan performa tinggi. Dalam tutorial ini, kamu akan dipandu langkah demi langkah bagaimana cara hosting website-mu, baik menggunakan layanan gratis maupun berbayar, sehingga bisa langsung online dan siap digunakan.
+
+">
+                        Before your website can be accessed by the public, you need to host it first.</p>
+
+                    <div class="tutorial-steps">
+                        <div class="tutorial-step hover-grow">
+                            <div class="step-number">1</div>
+                            <h3 data-en="Choose a Hosting Provider" data-id="Pilih Penyedia Hosting">Choose a Hosting
+                                Provider</h3>
+                            <p data-en="Select a reliable hosting provider that fits your needs and budget. Consider factors like uptime, customer support, and scalability."
+                                data-id="Pilih penyedia hosting yang andal sesuai kebutuhan dan anggaran Anda. Pertimbangkan faktor seperti uptime, dukungan pelanggan, dan skalabilitas.">
+                                Select a reliable hosting provider that fits your needs and budget. Consider factors
+                                like uptime, customer support, and scalability.</p>
+                        </div>
+
+                        <div class="tutorial-step hover-grow">
+                            <div class="step-number">2</div>
+                            <h3 data-en="Register a Domain Name" data-id="Daftarkan Nama Domain">Register a Domain Name
+                            </h3>
+                            <p data-en="Pick a memorable domain name that reflects your water-themed content. Keep it short, simple, and relevant to your niche."
+                                data-id="Pilih nama domain yang mudah diingat dan mencerminkan konten bertema air Anda. Buatlah pendek, sederhana, dan relevan dengan niche Anda.">
+                                Pick a memorable domain name that reflects your water-themed content. Keep it short,
+                                simple, and relevant to your niche.</p>
+                        </div>
+
+                        <div class="tutorial-step hover-grow">
+                            <div class="step-number">3</div>
+                            <h3 data-en="Upload Your Website Files" data-id="Unggah File Website Anda">Upload Your
+                                Website Files</h3>
+                            <p data-en="Use FTP or your hosting provider's file manager to upload your website files to the server. Ensure all paths and links are correct."
+                                data-id="Gunakan FTP atau manajer file penyedia hosting Anda untuk mengunggah file website ke server. Pastikan semua path dan link sudah benar.">
+                                Use FTP or your hosting provider's file manager to upload your website files to the
+                                server. Ensure all paths and links are correct.</p>
+                        </div>
+
+                        <div class="tutorial-step hover-grow">
+                            <div class="step-number">4</div>
+                            <h3 data-en="Configure Your Database" data-id="Konfigurasikan Database Anda">Configure Your
+                                Database</h3>
+                            <p data-en="If your site uses a database, set it up through your hosting control panel. Create users and assign proper permissions."
+                                data-id="Jika situs Anda menggunakan database, siapkan melalui panel kontrol hosting. Buat pengguna dan berikan izin yang tepat.">
+                                If your site uses a database, set it up through your hosting control panel. Create users
+                                and assign proper permissions.</p>
+                        </div>
+
+                        <div class="tutorial-step hover-grow">
+                            <div class="step-number">5</div>
+                            <h3 data-en="Test Your Website" data-id="Uji Website Anda">Test Your Website</h3>
+                            <p data-en="Before going live, thoroughly test all pages, forms, and functionality. Check for broken links and mobile responsiveness."
+                                data-id="Sebelum diluncurkan, uji semua halaman, formulir, dan fungsionalitas. Periksa link yang rusak dan responsivitas seluler.">
+                                Before going live, thoroughly test all pages, forms, and functionality. Check for broken
+                                links and mobile responsiveness.</p>
+                        </div>
+
+                        <div class="tutorial-step hover-grow">
+                            <div class="step-number">6</div>
+                            <h3 data-en="Go Live and Monitor" data-id="Luncurkan dan Pantau">Go Live and Monitor</h3>
+                            <p data-en="Once everything works perfectly, point your domain to your hosting server. Monitor performance and make adjustments as needed."
+                                data-id="Setelah semuanya berfungsi dengan sempurna, arahkan domain Anda ke server hosting. Pantau kinerja dan lakukan penyesuaian jika diperlukan.">
+                                Once everything works perfectly, point your domain to your hosting server. Monitor
+                                performance and make adjustments as needed.</p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <a href="articles/hosting-guide.html" class="btn" data-en="Read Full Guide"
+                            data-id="Baca Panduan Lengkap">Read Full Guide</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="container about-content fade-in">
+                    <div class="about-image hover-grow">
+                        <img src="images/hugo.jpg">
+                    </div>
+                    <div class="about-text">
+                        <h2 data-en="About Me" data-id="Tentang Saya">About Me</h2>
+                        <p data-en="Hello, I’m Hugo A.J Tarigan, a student of the Informatics Engineering study program. I developed this website as part of the final semester project for the Web Programming I course. Through this project, I aim to apply various concepts learned throughout the course, from HTML structure and CSS design to interactivity using JavaScript."
+                            data-id="Halo, saya Hugo A.J Tarigan, seorang mahasiswa program studi Teknik Informatika. Website ini saya kembangkan sebagai bagian dari tugas akhir semester untuk mata kuliah Pemrograman Web I. Melalui proyek ini, saya ingin mengaplikasikan berbagai konsep yang telah dipelajari selama perkuliahan, mulai dari struktur HTML, desain CSS, hingga interaktivitas menggunakan JavaScript.">
+                            Hello, I’m Hugo A.J Tarigan, a student of the Informatics Engineering study program.</p>
+                        <p data-en="This website is designed not only to fulfill academic requirements but also as a space for personal exploration and creativity. Every element is crafted with attention to visual aspects, ease of use, and user experience (UX). I believe that a website is not just a digital display, but also an effective and engaging communication medium when designed properly."
+                            data-id="Website ini dirancang tidak hanya sebagai syarat akademik, tetapi juga sebagai ruang eksplorasi dan kreativitas pribadi. Setiap elemen di dalamnya dibuat dengan memperhatikan aspek visual, kemudahan penggunaan, dan pengalaman pengguna (UX). Saya percaya bahwa website bukan sekadar tampilan digital, tetapi juga media komunikasi yang efektif dan menarik jika dirancang dengan tepat.">
+                            This website is designed not only to fulfill academic requirements but also as a space for
+                            personal exploration and creativity. </p>
+                        <p data-en="I hope that through this website, visitors can enjoy a pleasant and informative browsing experience. May this simple creation be the first step in my journey into the world of professional web development and continuous growth in the future."
+                            data-id="Saya berharap melalui website ini, pengunjung bisa merasakan pengalaman menjelajah yang menyenangkan sekaligus informatif. Semoga karya sederhana ini menjadi langkah awal saya dalam menapaki dunia pengembangan web secara profesional dan terus berkembang di masa depan.">
+                            I hope that through this website, visitors can enjoy a pleasant and informative browsing
+                            experience..</p>
+                        <a href="#contact" class="btn" data-en="Get In Touch" data-id="Hubungi Kami">Get In Touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter fade-in">
+                <h2 data-en="Stay Updated" data-id="Tetap Terkini">Stay Updated</h2>
+                <p data-en="Subscribe to our newsletter to receive the latest articles, tips for mindful living, and exclusive content straight to your inbox."
+                    data-id="Berlangganan newsletter kami untuk menerima artikel terbaru, tips untuk hidup penuh perhatian, dan konten eksklusif langsung ke kotak masuk Anda.">
+                    Subscribe to our newsletter to receive the latest articles, tips for mindful living, and exclusive
+                    content straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn" data-en="Subscribe"
+                        data-id="Berlangganan">Subscribe</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-en="Contact Us" data-id="Hubungi Kami">Contact Us</h2>
+                    <p data-en="We'd love to hear from you" data-id="Kami ingin mendengar dari Anda">We'd love to hear
+                        from you</p>
+                </div>
+
+                <div class="blog-grid" style="grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div class="fade-in">
+                        <h3 data-en="Send Us a Message" data-id="Kirimkan Pesan kepada Kami">Send Us a Message</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn" data-en="Send Message" data-id="Kirim Pesan">Send
+                                Message</button>
+                        </form>
+                    </div>
+
+                    <div class="fade-in">
+                        <h3 data-en="Contact Information" data-id="Informasi Kontak">Contact Information</h3>
+                        <div class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ciputat, Tangerang Selatan</span>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <span>0877 3452 8467</span>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@gmail.com</span>
+                        </div>
+
+                        <h3 style="margin-top: 2rem;" data-en="Follow Us" data-id="Ikuti Kami">Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer with wave animation -->
+    <footer>
+        <div class="wave-container">
+            <div class="wave"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 data-en="Hugo A. J Tarigan" data-id="Hugo A.J Tarigan">Hugo A. J Tarigan</h3>
+                    <p data-en="Building a website is about designing an experience — where aesthetics meet function, and ideas come to life."
+                        data-id="Membangun website adalah merancang pengalaman — di mana estetika bertemu fungsi, dan ide menjadi nyata.">
+                        Building a website is about designing an experience — where aesthetics meet function, and ideas
+                        come to life.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Quick Links" data-id="Tautan Cepat">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-id="Beranda">Beranda</a></li>
+                        <li><a href="#blog" data-en="Articles" data-id="artikel">Artikel</a></li>
+                        <li><a href="#tutorial" data-en="Hosting Tutorial" data-id="Tutorial Hosting">Hosting
+                                Tutorial</a></li>
+                        <li><a href="#about" data-en="About" data-id="Tentang">Profil</a></li>
+                        <li><a href="#contact" data-en="Contact" data-id="Kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Popular Articles" data-id="Artikel Populer">Popular Articles</h3>
+                    <ul>
+                        <li><a href="articles/web-development.html" data-en="Web Develover" data-id="Web Develover">Web
+                                Develover</a></li>
+                        <li><a href="articles/web-design.html" data-en="Web Design" data-id="Web Desiner">Web Design</a>
+                        </li>
+                        <li><a href="articles/ux-design.html" data-en="UX Design" data-id="UX Desiner">UX Design</a>
+                        </li>
+                        <li><a href="articles/hosting-guide.html" data-en="Hosting Guide"
+                                data-id="Panduan Hosting">Hosting
+                                Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HugoTarigan. <span data-en="All Rights Reserved." data-id="Seluruh Hak Cipta.">All Rights
+                        Reserved.</span>
+                    <!--| <span data-en="Designed with" data-id="Dirancang dengan">Designed with</span> -->
+                    <!-- <i class="fas fa-heart" style="color: var(--seafoam);"></i> <span data-en="near the ocean"
+                        data-id="di dekat laut">near the ocean</span> -->
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
